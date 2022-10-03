@@ -1,0 +1,30 @@
+uuid: 1484e23d-f975-4311-94f3-4daf2ad8309f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_color
+field_name: field_color
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: red
+      label: red
+    -
+      value: yellow
+      label: yellow
+    -
+      value: green
+      label: green
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,13 @@
+<?php
+
+use Drupal\Core\Render\Markup;
+
+/**
+ * Implements hook_preprocess_field__node__field_color__car().
+ */
+function alter_car_preprocess_field__node__field_color__car(&$variables) {
+  foreach ($variables['element']['#items'] as $key => $item) {
+    $color = $variables['element']['#items'][$key]->getValue()['value'];
+    $variables['items'][$key]['content']['#markup'] = Markup::create('<div style="background-color: ' . $color . '; width: 50px; height: 50px;"></div>');
+  }
+}

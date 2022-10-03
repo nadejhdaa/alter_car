@@ -1,0 +1,22 @@
+uuid: 4a36b2c2-c6ae-40af-95bc-f00f71dd1527
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.car
+id: node.car.promote
+field_name: promote
+entity_type: node
+bundle: car
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

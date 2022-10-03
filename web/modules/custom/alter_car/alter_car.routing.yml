@@ -1,0 +1,7 @@
+alter_car.user_cars:
+  path: '/my-cars'
+  defaults:
+    _controller: 'Drupal\alter_car\Controller\AlterCarsController::carsCount'
+    _title: 'My cars'
+  requirements:
+    _role: 'authenticated'

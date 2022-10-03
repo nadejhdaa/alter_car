@@ -1,0 +1,6 @@
+name: Alter car
+type: module
+description: Provides the user cars information.
+package: custom
+core_version_requirement: ^8.8 || ^9
+version: '1.0'

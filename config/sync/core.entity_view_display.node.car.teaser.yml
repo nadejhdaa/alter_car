@@ -1,0 +1,44 @@
+uuid: de3d89aa-3d8c-40cd-a049-79320e0654a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.car.field_color
+    - field.field.node.car.field_image_media
+    - field.field.node.car.field_mark
+    - node.type.car
+  module:
+    - options
+    - user
+id: node.car.teaser
+targetEntityType: node
+bundle: car
+mode: teaser
+content:
+  field_color:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_mark:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true
